@@ -1,0 +1,337 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin-bottom: env(safe-area-inset-bottom);
+  }
+
+.container-wrapper{
+    //border: 5px solid black;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    //background-color: #e6e6e6;
+}
+
+.container-header{
+    position: absolute;
+    //border: 2px solid black;
+    background-color: #1f2533;
+    color: #fff;
+    width: 100%;
+    height: 8%;
+}
+
+.movie-header-wrapper{
+    position: absolute;
+    top: 0px;
+    margin: 0px;
+    left: 5px;
+}
+
+.back-toseat-arrow{
+    position: relative;
+    top: 10px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.movie-selected{
+    position: relative;
+    left: 16px;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    font-weight: 300
+}
+.theatre-selected{
+    position: relative;
+    left: 35px;
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #c6c6c9;
+}
+
+.bite-container{
+    position:absolute;
+    top: 9%;
+    width:68%;
+    left: 0.5%;
+    background-color: #fff;
+}
+
+.bite-container-wrapper{
+    position: relative;
+    width:100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    //border: 1px solid black;
+}
+
+
+
+.bite-body-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 470px;
+    margin-left: 40px;
+    overflow: auto;
+}
+
+.bite-ticket-details{
+    position: absolute;
+    //height: 100vh;
+    width: 30%;
+    border: 1px solid #c6c6c6;
+    background-color: #fff;
+    left: 69.5%;
+    top: 9.5%;
+    //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.circle-left{
+    display: inline-block;
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    background-color: #f2f2f2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    top:30%;
+    border-radius:50%;
+}
+
+.bite-final-ticket-wrapper{
+    //border:3px solid blue;
+    padding:5px;
+}
+
+.bite-final-ticket-header{
+    //border:3px solid blue;
+    padding:3px;
+}
+
+.bite-booking-summary{
+    letter-spacing: 3px;
+    line-height:32px;
+    color:#c02c39;
+    font-weight:300;
+    margin-left: 10px;
+}
+
+.ticket-seat-wrapper{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+ul.ticket-seat-wrapper  li{
+    flex: 0 0 100%;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    //border: 1px solid black;
+    margin: 2px;
+    padding: 2px 5px;
+    box-sizing: border-box;
+}
+.seats-details-wrapper{
+    width: 100%;
+    //border: 1px solid black;
+    display: flex;
+}
+.seats-wrapper{
+    width: 70%;
+}
+
+div.seats-details{
+    display: inline;
+    margin: 5px 3px;
+    //border: 1px solid black;
+}
+
+div.seat-count{
+    width: 40%;
+    text-align: end;
+    padding: 2px 5px;
+}
+
+.seat-price-label{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    padding: 5px;
+}
+
+span.seat-prices{
+    margin-left: 70%;
+    padding: 2px 5px;
+}
+
+span.convenience-price{
+    margin-left: 54%;
+    padding: 2px 5px;
+}
+
+span.convenience-fees-amount{
+    display: inline-block;
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.convenience-drop{
+    color:#838181;
+    cursor:pointer;
+}
+
+.convenience-drop-rotate{
+    transform: rotate(180deg);
+}
+
+span.base-amount-label{
+    display: inline-block;
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #969696;
+    width: 50%;
+    margin-left: 2%;
+}
+
+span.base-amount-price{
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: #969696;
+    width: 50%;
+    margin-left: 35%;
+}
+
+li.dotted-separator{
+    border-bottom: 1px dotted #666;
+}
+
+span.sub-total-label{
+    display: inline-block;
+    width: 80%;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    padding: 5px;
+}
+
+
+span.sub-total-prices{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding: 2px 0px;
+}
+
+span.food-and-beverages-wrapper{
+    display: inline-block;
+    width: 80%;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    //padding: 0 3px;
+}
+
+span.food-and-beverages{
+    display: inline-block;
+    width: 80%;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #999;
+    line-height: 18px;
+}
+
+.del-food-and-beverages{
+    cursor: pointer;
+}
+
+span.food-total-prices-wrapper{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+span.food-total-prices{
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    color: #999;
+    line-height: 18px;
+    font-size: 13px;
+}
+
+.contribution-wrapper{
+    display: flex;
+    width:99%;
+    background-color: #f5f5f5;
+    margin-top: 30px;
+}
+
+.contribute-body{
+    width: 80%;
+    //border: 1px solid black;
+    position: relative;
+    padding:20px;
+}
+
+.contribute-header{
+    margin: 0px;
+    color: rgb(102, 102, 102);
+}
+
+.contribute-sub-header{
+    margin: 0px;
+    padding: 0px;
+    font-size:12px;
+    color: rgb(102, 102, 102);
+}
+
+.contribute-subsub-header{
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+}
+
+.contribute-amount-wrapper{
+    width: 40%;
+    //border: 1px solid black;
+    position: relative;
+    padding: 20px;
+    text-align: end;
+}
+
+.contribute-amount{
+    margin: 0px;
+    color: rgb(102, 102, 102);
+}
+
+.contribute-add-btn{
+    margin:0px;
+    padding: 0px;
+    color: red;
+    font-size: 12px;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

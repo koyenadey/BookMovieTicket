@@ -1,0 +1,251 @@
+.banner-fullWrapper
+{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 65vh;
+    background-color: rgb(26, 26, 26);
+}
+.cover-image{
+    background: transparent;
+    //border: 1px solid #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 65vh;
+}
+
+.sticky-header-wrapper{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between  ;
+    padding:0;
+    //border: 1px solid black;
+    width: 100%;
+    display: flex;
+    z-index: 9999;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.sticky-header-title{
+    //border: 1px solid brown;
+    width: 100%;
+}
+.sticky-header-title h1{
+    padding: 10px 25px 0 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+}
+.sticky-button-wrapper{
+    margin-right: 22px;
+    //border: 1px solid brown;
+    text-align: end;
+    width: 20%;
+}
+.sticky-book-ticket{
+    position: relative;
+    top: 25%;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+    border: rgb(248, 68, 100);
+    background-color: rgb(248, 68, 100);
+}
+
+.mutimedia-wrapper{
+    position: absolute;
+    left: 7%;
+    top: 8%;
+    height: auto;
+    width: 20%;;
+    //border: 1px solid #fff;
+    border-radius: 5px;
+}
+.multimedia-body img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.multimedia-details{
+    text-align: center;
+    font-size: 12px;
+    padding: 8px;
+    background-color: #000;
+    color: #fff;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.eventInformationContainer
+{
+    position: relative;
+    top: 4%;
+    left: 28%;
+    width: 30vw;
+    height: 55vh;
+    //border:1px solid #fff;
+}
+
+.commonfontandwhitecolor
+{
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.eventInformationContainer h1
+{
+    @extend .commonfontandwhitecolor;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 42px; 
+    position: relative;
+    top: 6%;
+    left: 2%;
+}
+
+.eventInformationContainer p
+{
+    @extend .commonfontandwhitecolor;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+@mixin ratebody{
+    position: relative;
+    left: 2%;
+    margin-top: 6%; 
+    display: flex;
+    width: 95%;
+    border-radius: 8px;
+}
+.rate
+{
+    @extend .commonfontandwhitecolor;
+    @include ratebody;
+    border: 1px solid #fff;   
+}
+
+.like{
+    @extend .commonfontandwhitecolor;
+    @include ratebody;
+    cursor: pointer;
+    background-color: rgb(51, 51, 51);
+}
+
+.rate-body{
+    width: 71%;
+    padding: 10px;
+}
+
+.rate-body p{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: 2%;
+    top: 3%;;
+}
+
+.rate-body-h1{
+    font-family: 'Roboto', sans-serif;
+    font-size:18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+@mixin rate-body-font
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2px; 
+}
+
+.interested-body-h2{
+    @include rate-body-font;
+    font-size: 12px;
+    line-height: 16px;
+}
+.rate-body-h2{
+    @include rate-body-font;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(204, 204, 204);
+}
+.like-button{
+    margin-top: 12px;
+}
+
+@mixin button-style
+{
+    position: relative;
+    top: 17%;
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    padding: 10px 12px;
+    cursor: pointer;
+    background-color: rgb(242, 245, 249);
+    border:none;
+}
+.like-button-rate button{
+   @include button-style;
+   font-size: 18px;
+   border-radius: 8px;
+   line-height: 24px;   
+}
+
+.like-button-interested button{
+    @include button-style;
+    font-size: 12px;
+    border-radius: 2px;
+    line-height: 16px;   
+ }
+
+.eventAttributesWrapper{
+    position: relative;
+    top: 5%;
+}
+
+.halltype, .languagetype{
+    background-color: rgb(229, 229, 229);
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    width: 30%;
+    padding: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+    left: 2%;
+    border-radius: 3px;
+}
+.duration{
+    position: absolute;
+    top:0;
+    padding: 0;
+    margin: 0;
+}
+
+.duration span
+{
+    display: inline-block;
+    padding: 2px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.book-ticket
+{
+    position: relative;
+    top: 22%;
+    left: 2%;
+    padding: 12px;
+    width: 50%;
+    border-radius: 10px;
+    color: #fff;
+    border: rgb(248, 68, 100);
+    background-color: rgb(248, 68, 100);;
+}

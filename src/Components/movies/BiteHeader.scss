@@ -1,0 +1,30 @@
+.bite-header{
+    position: relative;
+}
+
+.bite-sticky-header-filters{
+    text-align: center;
+    position: relative;
+    top:2px;
+    border-top: 1px solid #c6c6c6;
+    padding: 10px;
+    //border: 1px solid red;
+}
+
+.all-food-filter{//.beverages-filter,.snacks-filter,.popcorn-filter,.combo-filter{
+    font-size: 10px;
+    color: #666;
+    display:inline-block;
+    border: 1px solid #dfe3e7;
+    padding: 3px 13px;
+    border-radius: 11px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.cat-selected{
+    background-color: #dc354b;
+    border: 1px solid #d3354b;
+    color: #fff;
+}

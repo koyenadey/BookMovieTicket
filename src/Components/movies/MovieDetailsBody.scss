@@ -1,0 +1,70 @@
+.movie-body-wrapper{
+    width: 80vw;
+    padding: 8px 0;
+    margin-left: 80px;
+    margin-top: 0;
+    //border: 1px solid black;
+}
+.about-movie h4 , .about-cast, .about-crew
+{
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 0.2px;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.about-movie{
+    padding: 30px 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+
+}
+.about-cast, .about-crew{
+    padding: 40px 5px;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.cast, .crew{
+    display: flex;
+    //border: 3px solid purple;
+}
+.cast > div, .crew > div{
+    //border: 1px solid red;
+    text-align: center;
+    margin: 10px 10px;
+    height: 200px;
+    width: 150px;
+}
+
+.cast-data img , .crew-data img{
+    border-radius: 50%;
+    padding: 8px;
+    aspect-ratio: auto 120 / 120;
+    height: 150px;
+    width: 150px;
+}
+
+.cast-footer, .crew-footer{
+    margin-left: 20px;
+}
+
+.cast-name, .crew-name{
+    padding: 0;
+    margin: 0 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.cast-role, .crew-role{
+    color: rgb(102, 102, 102);
+    padding:0;
+    margin:0 4px;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}

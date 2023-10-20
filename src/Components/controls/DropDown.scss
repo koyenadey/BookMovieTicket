@@ -1,0 +1,46 @@
+.option-type{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.option-type-trigger{
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    padding: 2.5%;
+    text-align: center;
+    border-left: 1px solid #d5d2d2;
+    border-right: 1px solid #d5d2d2;
+    border-bottom: 3px solid rgb(234, 63, 44); 
+}
+.option-type-trigger span{
+    position: absolute;
+    font-size: 14px;
+    color: #000;    
+}
+.option-type-options{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    z-index: 9999;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.option-type-options span{
+    display: inline-block;
+    margin: 2px;
+    color: #999;
+    cursor: pointer;
+    padding: 8px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.option-type-options span:hover{
+    background-color: #edeaea;
+}
+

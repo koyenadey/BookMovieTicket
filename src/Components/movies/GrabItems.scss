@@ -1,0 +1,82 @@
+.bite-detail-wrapper{
+    display: flex;
+}
+.bite-food-type-image{
+    height:12px;
+    width:12px;
+    border-radius: 0;
+}
+
+.bite-item-image{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    top: 10px;
+}
+
+.bite-desc-wrapper{
+    padding: 0 5px;
+}
+
+.bite-desc-header{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    width: 90%;
+}
+
+.bite-desc-subHeader{
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    width: 90%;
+    color: #666;
+}
+
+.bite-price-wrapper{
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    width:100%;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    padding: 15px 0;
+    //border: 1px solid black;
+}
+
+.add-button{
+    color: #dc354b;
+    border: 1px solid #dc354b;
+    border-radius: 6px;
+    padding: 2px 15px;
+    cursor: pointer;
+}
+
+div.addrem-qty{
+    display: flex;
+    position: absolute;
+    //border: 1px solid black;
+    left: 68%;
+}
+
+div.qty-numbers{
+    padding: 0 5px;
+}
+
+div.add-icon,div.subtract-icon{
+    border: 1px solid #ccc;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+span.addMaxItems{
+    pointer-events: none;
+    color: #ccc;
+}
+
+span.add-qty,span.minus-qty{
+    color: #dc3558;
+    cursor: pointer;
+}
